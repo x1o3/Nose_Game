@@ -16,7 +16,7 @@ BLACK = (0,0,0)
 WHITE = (255,255,255)
 RED = (255,0,0)
 BLUE = (0,0,255)
-GREEN = (0,255,0)
+GREEN = (0,255,0)   
 CYAN = (0,255,255)
 MAGENTA = (255,0,255)
 
@@ -147,8 +147,8 @@ def main_game_loop():
 
         if amountOfEnemies < 5:
             new_enemy = pygame.Rect(
-                random.randint(50, WINDOWWIDTH - 50),
-                random.randint(50, WINDOWHEIGHT - 50),
+                random.randint(100, WINDOWWIDTH - 100),
+                random.randint(100, WINDOWHEIGHT - 100),
                 50, 50
             )
             enemies.append(new_enemy)
